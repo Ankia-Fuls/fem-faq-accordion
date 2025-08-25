@@ -66,4 +66,29 @@ main {
             aspect-ratio: 1 / 1;
         }
     }
+
+    &__header {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: 1fr;
+
+        justify-content: left;
+        align-items: center;
+
+        background-color: inherit;
+        border: none;
+
+        font-weight: 600;
+        font-size: 0.9375rem;
+        letter-spacing: 0.03125rem;
+        text-align: left;
+        color: var(--purple-950);
+
+    }
+}
+
+.button__image {
+    content: url(../assets/images/icon-plus.svg);
+    justify-self: end;
 }
