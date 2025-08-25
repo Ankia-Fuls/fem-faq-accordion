@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --white: hsl(0, 100%, 100%);
     --purple-100: hsl(275, 100%, 97%);
@@ -20,20 +22,48 @@ html {
 }
 
 body {
-    background-color: var(--purple-600);
+    background-color: var(--purple-100);
     background-image: url(../assets/images/background-pattern-mobile.svg);
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
-    min-height: 100vh;
+
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    color: var(--purple-950);
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
 .attribution {
     font-size: 0.6875rem;
     text-align: center;
+    padding: 1rem;
 }
 
 .attribution a {
     color: var(--attribution);
+}
+
+.accordion {
+    width: 87.47%;
+
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 6.4%;
+
+    &__title {
+        font-size: 2.05rem;
+        margin-bottom: 1.5625rem;
+
+        &--image {
+            width: 1.5625rem;
+            aspect-ratio: 1 / 1;
+        }
+    }
 }
