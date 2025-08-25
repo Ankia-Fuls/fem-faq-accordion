@@ -64,7 +64,17 @@ main {
         &--image {
             width: 1.5625rem;
             aspect-ratio: 1 / 1;
+
+            margin-inline-end: 1rem;
         }
+    }
+
+    &__divider {
+        height: 0.125rem;
+        width: 100%;
+        background-color: var(--purple-100);
+
+        margin: 1.125rem 0;
     }
 
     &__header {
@@ -80,10 +90,11 @@ main {
         border: none;
 
         font-weight: 600;
-        font-size: 0.9375rem;
+        font-size: 1rem;
         letter-spacing: 0.03125rem;
         text-align: left;
         color: var(--purple-950);
+        font-family: "Work Sans", sans-serif;
 
     }
 }
