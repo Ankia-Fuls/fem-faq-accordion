@@ -100,17 +100,25 @@ main {
     }
 
     &__panel {
-        padding-top: 1.5625rem;
         font-size: 0.9rem;
         color: var(--purple-600);
         line-height: 1.4;
+
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in;
     }
 }
 
 .accordion__header:hover,
-.accordion__header:active {
+.active {
     color: var(--purple-hover);
     cursor: pointer;
+}
+
+.accordion__panel:not([aria-hidden="true"]) {
+    max-height: 62.5rem;
+    padding-top: 1.5625rem;
 }
 
 .button__image {
