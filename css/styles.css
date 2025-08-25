@@ -107,6 +107,5 @@ main {
 }
 
 .button__image {
-  content: url(../assets/images/icon-plus.svg);
   justify-self: end;
 }/*# sourceMappingURL=styles.css.map */
