@@ -92,17 +92,17 @@ main {
   line-height: 1.4;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-in;
+  transition: max-height 0.2s ease-out;
 }
 
-.accordion__header:hover,
-.active {
+.accordion__header:hover {
   color: var(--purple-hover);
   cursor: pointer;
 }
 
 .accordion__panel:not([aria-hidden=true]) {
-  max-height: 62.5rem;
+  max-height: 9.375rem;
+  padding-bottom: 1.125rem;
   padding-top: 1.5625rem;
 }
 
