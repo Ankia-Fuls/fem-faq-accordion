@@ -5,6 +5,7 @@
   --purple-600: hsl(292, 16%, 49%);
   --purple-950: hsl(292, 42%, 14%);
   --attribution: hsl(228, 45%, 44%);
+  --purple-hover: hsl(281, 58%, 51%);
 }
 
 *,
@@ -84,6 +85,18 @@ main {
   text-align: left;
   color: var(--purple-950);
   font-family: "Work Sans", sans-serif;
+}
+.accordion__panel {
+  padding-top: 1.5625rem;
+  font-size: 0.9rem;
+  color: var(--purple-600);
+  line-height: 1.4;
+}
+
+.accordion__header:hover,
+.accordion__header:active {
+  color: var(--purple-hover);
+  cursor: pointer;
 }
 
 .button__image {
