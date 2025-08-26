@@ -31,6 +31,11 @@ body {
   font-weight: 400;
   color: var(--purple-950);
 }
+@media only screen and (min-width: 31.25rem) {
+  body {
+    background-image: url(../assets/images/background-pattern-desktop.svg);
+  }
+}
 
 main {
   display: flex;
@@ -51,18 +56,35 @@ main {
 
 .accordion {
   width: 87.47%;
+  max-width: 37.5rem;
   background-color: var(--white);
   border-radius: 0.5rem;
   padding: 6.4%;
+}
+@media only screen and (min-width: 31.25rem) {
+  .accordion {
+    padding: 2.43%;
+  }
 }
 .accordion__title {
   font-size: 2.05rem;
   margin-bottom: 1.5625rem;
 }
+@media only screen and (min-width: 31.25rem) {
+  .accordion__title {
+    font-size: 3.15rem;
+  }
+}
 .accordion__title--image {
   width: 1.5625rem;
   aspect-ratio: 1/1;
   margin-inline-end: 1rem;
+}
+@media only screen and (min-width: 31.25rem) {
+  .accordion__title--image {
+    width: 2.5rem;
+    margin-inline-end: 0.6rem;
+  }
 }
 .accordion__divider {
   height: 0.125rem;
@@ -86,6 +108,12 @@ main {
   color: var(--purple-950);
   font-family: "Work Sans", sans-serif;
 }
+@media only screen and (min-width: 31.25rem) {
+  .accordion__header {
+    grid-template-columns: 7fr 1fr;
+    font-size: 1.07rem;
+  }
+}
 .accordion__panel {
   font-size: 0.9rem;
   color: var(--purple-600);
@@ -93,6 +121,11 @@ main {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+@media only screen and (min-width: 31.25rem) {
+  .accordion__panel {
+    font-size: 1rem;
+  }
 }
 
 .accordion__header:hover {

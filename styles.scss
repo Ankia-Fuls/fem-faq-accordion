@@ -33,6 +33,10 @@ body {
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
     color: var(--purple-950);
+
+    @media only screen and (min-width:31.25rem) {
+        background-image: url(../assets/images/background-pattern-desktop.svg);
+    }
 }
 
 main {
@@ -54,20 +58,35 @@ main {
 
 .accordion {
     width: 87.47%;
+    max-width: 37.5rem;
 
     background-color: var(--white);
     border-radius: 0.5rem;
     padding: 6.4%;
 
+    @media only screen and (min-width:31.25rem) {
+        padding: 2.43%;
+    }
+
     &__title {
         font-size: 2.05rem;
         margin-bottom: 1.5625rem;
+
+        @media only screen and (min-width:31.25rem) {
+            font-size: 3.15rem;
+        }
 
         &--image {
             width: 1.5625rem;
             aspect-ratio: 1 / 1;
 
             margin-inline-end: 1rem;
+
+            @media only screen and (min-width:31.25rem) {
+                width: 2.5rem;
+
+                margin-inline-end: 0.6rem;
+            }
         }
     }
 
@@ -97,7 +116,12 @@ main {
         text-align: left;
         color: var(--purple-950);
         font-family: "Work Sans", sans-serif;
-        // margin-bottom: 1.5625rem;
+
+        @media only screen and (min-width:31.25rem) {
+            grid-template-columns: 7fr 1fr;
+
+            font-size: 1.07rem;
+        }
     }
 
     &__panel {
@@ -108,6 +132,10 @@ main {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
+
+        @media only screen and (min-width:31.25rem) {
+            font-size: 1rem;
+        }
     }
 }
 
