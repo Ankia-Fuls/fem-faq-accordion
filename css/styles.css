@@ -55,8 +55,7 @@ main {
 }
 
 .accordion {
-  width: 87.47%;
-  max-width: 37.5rem;
+  width: clamp(15.625rem, 87.47%, 37.5rem);
   background-color: var(--white);
   border-radius: 0.5rem;
   padding: 6.4%;
