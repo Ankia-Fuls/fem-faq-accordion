@@ -17,5 +17,4 @@ const toggle = (header) => {
         image[0].src = "./assets/images/icon-minus.svg";
         image[0].alt = "A dark purple minus icon";
     }
-
 }
